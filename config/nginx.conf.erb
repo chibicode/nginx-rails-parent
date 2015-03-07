@@ -43,7 +43,7 @@ http {
     }
 
     location /child {
-      proxy_pass https://thawing-dusk-8740.herokuapp.com/;
+      proxy_pass http://thawing-dusk-8740.herokuapp.com/;
   		proxy_set_header Host thawing-dusk-8740.herokuapp.com;
       proxy_redirect default;
     }
